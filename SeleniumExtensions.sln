@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagesLib", "PagesLib\PagesLib.csproj", "{21444D1A-FAC3-4D7C-8D2C-B868DB77A473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumExtensions", "SeleniumExtensions\SeleniumExtensions.csproj", "{45138DF7-C80F-4EC7-9B56-17BD3997C72E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21444D1A-FAC3-4D7C-8D2C-B868DB77A473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21444D1A-FAC3-4D7C-8D2C-B868DB77A473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21444D1A-FAC3-4D7C-8D2C-B868DB77A473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21444D1A-FAC3-4D7C-8D2C-B868DB77A473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45138DF7-C80F-4EC7-9B56-17BD3997C72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45138DF7-C80F-4EC7-9B56-17BD3997C72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45138DF7-C80F-4EC7-9B56-17BD3997C72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45138DF7-C80F-4EC7-9B56-17BD3997C72E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
