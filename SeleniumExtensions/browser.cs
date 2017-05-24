@@ -145,7 +145,7 @@ namespace SeleniumExtensions
         * This Part contains public methods to start and end Browser session
         * If you want to use else WebDriver you can do it by Create new 
         * Start<BrowserName> method.
-        * Also you can create ney methods for existing browsers, with settings, which you need
+        * Also you can create new methods for existing browsers, with settings, which you need
         */
 
         public static void Start()
@@ -188,7 +188,7 @@ namespace SeleniumExtensions
                     break;
 
                 default:
-                    throw new Exception(string.Format("Unknown browser selected: {0}.", SelectedBrowser));
+                    throw new Exception(string.Format("Your drowser is not Supported: {0}.", SelectedBrowser));
             }
 
             _webDriver.Manage().Window.Maximize();
@@ -229,7 +229,7 @@ namespace SeleniumExtensions
         private static ChromeDriver StartChrome(ChromeOptions chromeOptions, string directory)
         {
             return new ChromeDriver(directory, chromeOptions);
-        }  // you can use this method if you need to start ChromeDriver From Enother Diretory
+        }  // you can use this method if you need to start ChromeDriver From another Directory
 
 
         #endregion
