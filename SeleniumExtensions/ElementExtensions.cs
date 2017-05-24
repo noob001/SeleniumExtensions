@@ -443,6 +443,28 @@ namespace SeleniumExtensions
 
             return this;
         }
+        
+        //If you use this method - be ready to catch exception. Author doesn't say that this method will work normally in all times.       
+          public WebElement BySpecialAttribute(string specialAttribute, string specialValue, bool exactMatch = true)
+        {
+            var xPath = exactMatch ?
+                        string.Format("//*[@{0}=\"{1}\"]", specialAttribute, specialValue) :
+                        string.Format("//*[contains(@{0}, \"{1}\")]", specialAttribute, specialValue);
+            var selector = By.XPath(xPath);
+
+              // Left if 
+            _firstSelector = _firstSelector ?? selector;
+
+            _searchProperties.Add(new SearchProperty
+            {
+                AttributeName = specialAttribute,
+                AttributeValue = specialValue,
+                ExactMatch = exactMatch
+            });
+
+            return this;
+        }
+        
 
         private string SearchCriteriaToString()
         {
